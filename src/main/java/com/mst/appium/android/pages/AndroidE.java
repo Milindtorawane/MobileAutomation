@@ -1,9 +1,9 @@
 package com.mst.appium.android.pages;
 
-import com.mst.appium.common.edisonInterface;
+import com.mst.appium.common.esInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class AndroidE implements edisonInterface {
+public class AndroidE implements esInterface {
 
 	String driverName;
 	public AndroidE(DeviceInfo cfg){

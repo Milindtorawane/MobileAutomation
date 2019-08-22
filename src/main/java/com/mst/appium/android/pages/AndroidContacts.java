@@ -2,10 +2,10 @@ package com.mst.appium.android.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import com.mst.appium.common.ContactInterface;
+import com.mst.appium.common.CntctInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class AndroidContacts implements ContactInterface{
+public class AndroidContacts implements CntctInterface{
 
 	private String driver;
 	public AndroidContacts(DeviceInfo deviceInfo) {

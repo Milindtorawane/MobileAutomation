@@ -2,7 +2,7 @@ package com.mst.appium.test;
 
 import org.testng.annotations.Test;
 import com.mst.appium.BaseTest;
-import com.mst.appium.Edison;
+import com.mst.appium.Ed;
 
 
 public class MakeCallTest extends BaseTest{

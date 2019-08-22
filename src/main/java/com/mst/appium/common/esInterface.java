@@ -1,6 +1,6 @@
 package com.mst.appium.common;
 
-public interface edisonInterface {
+public interface esInterface {
 
 	void makecall();
 	

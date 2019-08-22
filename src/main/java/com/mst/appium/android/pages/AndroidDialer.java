@@ -4,10 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.mst.appium.base.BasePage;
-import com.mst.appium.common.DialerInterface;
+import com.mst.appium.common.CallerInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class AndroidDialer extends BasePage implements DialerInterface {
+public class AndroidDialer extends BasePage implements CallerInterface {
 
 	public AndroidDialer(DeviceInfo deviceinfo) {
 		super(deviceinfo);
@@ -22,6 +22,8 @@ public class AndroidDialer extends BasePage implements DialerInterface {
 			
 			System.out.println("Device 2 contact number"+contactnum);
 			//callbtn.click();
+			
+		
 			
 			
 		}

@@ -1,22 +1,20 @@
 package com.mst.appium.core;
 
-import com.mst.appium.Edison;
+import com.mst.appium.Ed;
 import com.mst.appium.android.pages.AndroidContacts;
 import com.mst.appium.android.pages.AndroidDialer;
-import com.mst.appium.common.ContactInterface;
-import com.mst.appium.common.Contacts;
-import com.mst.appium.common.Dialer;
-import com.mst.appium.common.DialerInterface;
-import com.mst.appium.common.edisonInterface;
+import com.mst.appium.common.CntctInterface;
+import com.mst.appium.common.CallerInterface;
+import com.mst.appium.common.esInterface;
 import com.mst.appium.ios.pages.IOSContacts;
 import com.mst.appium.ios.pages.IOSDialer;
 
 public class InitDevice {
 	
 
-	public edisonInterface edison;
-	public ContactInterface contacts;
-	public DialerInterface dialer;
+	public esInterface edison;
+	public CntctInterface contacts;
+	public CallerInterface dialer;
 	private DeviceInfo deviceInfo;
 	private String manufacturer;
 
@@ -58,7 +56,7 @@ public class InitDevice {
 		case "apple":
 			
 			deviceInfo.setDriverName("apppledriver");
-			edison = new Edison(deviceInfo);
+			edison = new Ed(deviceInfo);
 			contacts = new IOSContacts(deviceInfo);
 			dialer = new  IOSDialer(deviceInfo);
 			setCfg(deviceInfo);
@@ -67,14 +65,14 @@ public class InitDevice {
 
 		case "android":
 			deviceInfo.setDriverName("androidriver");
-			edison = new Edison(deviceInfo);
+			edison = new Ed(deviceInfo);
 			contacts = new AndroidContacts(deviceInfo);
 			dialer = new  AndroidDialer(deviceInfo);
 			setCfg(deviceInfo);
 			System.out.println("InitDevices:android device");
 			break;
 		default:
-			edison = new Edison(deviceInfo);
+			edison = new Ed(deviceInfo);
 			break;
 		
 		

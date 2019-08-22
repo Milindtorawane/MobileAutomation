@@ -1,6 +1,6 @@
 package com.mst.appium.common;
 
-public interface DialerInterface {
+public interface CallerInterface {
 	
 	
 

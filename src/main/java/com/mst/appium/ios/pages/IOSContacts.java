@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
-import com.mst.appium.common.ContactInterface;
+import com.mst.appium.common.CntctInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class IOSContacts  implements ContactInterface{
+public class IOSContacts  implements CntctInterface{
 
 	private String driver;
 	

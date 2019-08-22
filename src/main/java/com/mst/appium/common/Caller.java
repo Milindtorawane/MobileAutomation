@@ -4,10 +4,10 @@ import com.mst.appium.core.DeviceInfo;
 
 
 	
-	public class Dialer implements DialerInterface {
-		private DialerInterface dialer;
+	public class Caller implements CallerInterface {
+		private CallerInterface dialer;
 
-		public Dialer(DeviceInfo deviceInfo) {
+		public Caller(DeviceInfo deviceInfo) {
 			
 		
 		}

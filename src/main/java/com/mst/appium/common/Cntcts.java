@@ -2,10 +2,10 @@ package com.mst.appium.common;
 
 import com.mst.appium.core.DeviceInfo;
 
-public class Contacts implements ContactInterface {
-	private ContactInterface contact;
+public class Cntcts implements CntctInterface {
+	private CntctInterface contact;
 
-	public Contacts(DeviceInfo deviceInfo) {
+	public Cntcts(DeviceInfo deviceInfo) {
 		
 	
 	}

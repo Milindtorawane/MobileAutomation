@@ -1,6 +1,6 @@
 package com.mst.appium.common;
 
-public interface ContactInterface {
+public interface CntctInterface {
 
 	
 	public void addContact();

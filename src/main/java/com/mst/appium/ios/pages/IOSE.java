@@ -1,10 +1,10 @@
 package com.mst.appium.ios.pages;
 
 
-import com.mst.appium.common.edisonInterface;
+import com.mst.appium.common.esInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class IOSE implements edisonInterface{
+public class IOSE implements esInterface{
 	String driverName;
 	
 	public IOSE(DeviceInfo deviceInfo){

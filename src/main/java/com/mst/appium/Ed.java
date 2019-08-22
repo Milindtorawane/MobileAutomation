@@ -1,16 +1,16 @@
 package com.mst.appium;
 
 import com.mst.appium.android.pages.AndroidE;
-import com.mst.appium.common.edisonInterface;
+import com.mst.appium.common.esInterface;
 import com.mst.appium.core.DeviceInfo;
 import com.mst.appium.ios.pages.IOSE;
 
-public class Edison implements edisonInterface {
+public class Ed implements esInterface {
 
-	private edisonInterface eDison;
+	private esInterface eDison;
 //	private BaseTest cfg;
 
-	public Edison(DeviceInfo cfg) {
+	public Ed(DeviceInfo cfg) {
 	
 		System.out.println("Manufacture>>"+cfg.getManufacturer());
 		switch (cfg.getManufacturer()) {

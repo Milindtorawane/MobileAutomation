@@ -4,12 +4,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.mst.appium.base.BasePage;
-import com.mst.appium.common.DialerInterface;
+import com.mst.appium.common.CallerInterface;
 import com.mst.appium.core.DeviceInfo;
 
 
 
-public class IOSDialer extends BasePage implements DialerInterface {
+public class IOSDialer extends BasePage implements CallerInterface {
 
 	public IOSDialer(DeviceInfo deviceinfo) {
 		super(deviceinfo);
