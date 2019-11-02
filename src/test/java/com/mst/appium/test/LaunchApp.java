@@ -9,6 +9,15 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class LaunchApp {
 	
+	/*
+	 * {
+    "platformName": "iOS",
+    "platformVersion": "11.0",
+    "deviceName": "iPhone 7",
+    "automationName": "XCUITest",
+    "app": "/path/to/my.app"
+}
+	 */
 	
 	static AndroidDriver driver =null ;
 	
@@ -20,7 +29,9 @@ public class LaunchApp {
 		cap.setCapability("platformName","Android");
 		cap.setCapability("platformVersion","6.0.1");
 		cap.setCapability("appPackage", "");
-		cap.setCapability("appActivity", "");	
+		cap.setCapability("appActivity", "");
+		cap.setCapability("app", "/path/to/my.app");
+	
 		driver= new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		
 		

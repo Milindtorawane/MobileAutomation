@@ -2,15 +2,15 @@ package com.mst.appium.android.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import com.mst.appium.base.BasePage;
 import com.mst.appium.common.CallerInterface;
 import com.mst.appium.core.DeviceInfo;
 
-public class AndroidDialer extends BasePage implements CallerInterface {
+public class AndroidDialer implements CallerInterface {
 
+	private String driver;
 	public AndroidDialer(DeviceInfo deviceinfo) {
-		super(deviceinfo);
+		this.driver=deviceinfo.getDriverName();
+		//PageFactory.initElements(driver, this);
 		
 	}
 		

@@ -1,5 +1,7 @@
 package com.mst.appium.core;
 
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import com.mst.appium.Ed;
 import com.mst.appium.android.pages.AndroidContacts;
 import com.mst.appium.android.pages.AndroidDialer;
@@ -55,6 +57,9 @@ public class InitDevice {
 		
 		case "apple":
 			
+			
+			
+			
 			deviceInfo.setDriverName("apppledriver");
 			edison = new Ed(deviceInfo);
 			contacts = new IOSContacts(deviceInfo);
@@ -64,7 +69,23 @@ public class InitDevice {
 			break;
 
 		case "android":
+			
+			
 			deviceInfo.setDriverName("androidriver");
+			/*
+			DesiredCapabilities capabilities = new DesiredCapabilities(browserName, "", Platform.ANDROID);
+			capabilities.setCapability("user",userInfo.getUsername());
+			capabilities.setCapability("password",userInfo.getPassword());
+			System.setProperty("myUser",userInfo.getUsername());
+			System.setProperty("pass",userInfo.getPassword());
+			capabilities.setCapability("deviceName", deviceName);
+			capabilities.setCapability("host", host);
+			capabilities.setCapability("automationName", "Appium");
+			capabilities.setCapability("appPackage", this.props.getProperty("homeappPackage"));
+			capabilities.setCapability("appActivity", this.props.getProperty("homeappActivity"));
+			capabilities.setCapability("newCommandTimeout", "1200");
+			capabilities.setCapability("autoAcceptAlerts", true);
+			*/
 			edison = new Ed(deviceInfo);
 			contacts = new AndroidContacts(deviceInfo);
 			dialer = new  AndroidDialer(deviceInfo);

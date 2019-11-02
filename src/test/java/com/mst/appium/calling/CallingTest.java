@@ -10,6 +10,8 @@ public class CallingTest extends BaseTest {
 	
 	@Test
 	public void verifyCalling(){
+		
+	
 		Device1.dialer.makeCall(deviceInfo2.getContactNumber());
 		Device2.dialer.makeCall(deviceInfo1.getContactNumber());
 		

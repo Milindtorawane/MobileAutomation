@@ -14,7 +14,6 @@ public class BaseTest {
 	private String driverN;
 	public InitDevice Device1;
 	public InitDevice Device2;
-	
 	public DeviceInfo deviceInfo1;
 	public DeviceInfo deviceInfo2;
 

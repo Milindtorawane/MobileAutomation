@@ -20,9 +20,6 @@ public class ExcelReader {
 	XSSFCell cell;
 	XSSFRow row;
 	
-
-	
-
 	public ExcelReader(String fileName) {
 
 		System.out.println(fileName);
@@ -51,12 +48,12 @@ public class ExcelReader {
 	}
 
 	
-	@Test(dataProvider="ShortMessageVerification" )
-	public void verifyShortCode(String number,String Message){
-		
-		System.out.println("number>>"+number);
-		System.out.println("Message>>"+number);
-	}
+//	@Test(dataProvider="ShortMessageVerification" )
+//	public void verifyShortCode(String number,String Message){
+//		
+//		System.out.println("number>>"+number);
+//		System.out.println("Message>>"+number);
+//	}
 	
 	
 	@DataProvider(name="ShortMessageVerification")
